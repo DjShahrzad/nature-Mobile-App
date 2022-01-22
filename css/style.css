@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+body {
+    font-family:'Roboto Condensed',
+    sans-serif;
+    margin: 0;
+    background-color: #eee;
+    height: auto;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    padding: 2px;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: 2px;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 30px 0px 44px rgb(0, 0, 0, 0.4), -30px 0px 44px rgb(0, 0, 0, 0.4);
+}
+
+#landing {
+    background-color: #fff;
+}
+
+#landing-text {
+    display: flex;
+    flex: 0 1 40vw;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+#landing-text h2 {
+    color: #888;
+}
+
+#landing-image {
+    background-image: url(/index.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    flex: 0 1 60vw;
+    margin: 0;
+}
+
+.btn {
+    padding: 0.5rem 2rem;
+    border: 2px #888 solid;
+    display: inline-block;
+    margin: 2rem 0 0;
+    border-radius: 50px;
+    box-shadow: 30px 0px 44px rgb(0, 0, 0, 0.4),
+    -30px 0px 44px rgb(0, 0, 0, 0.4);
+    text-decoration: none;
+    color: #333;
+    transition: background 500ms ease;
+}
+
+.btn:hover {
+    background:#888;
+
+}
+
+#header {
+    padding: 1.5rem;
+    text-align: center;
+    background: #333;
+    color: #fff;
+}
+
+#header h2 {
+    border-left: solid 1px #fff;
+    border-right: solid 1px #fff;
+    display: inline-block;
+    text-align: center;
+    padding: 1rem; 
+    margin-bottom: 2px; 
+    margin-top: 0;
+    text-decoration: underline;
+}
+
+.caption {
+    padding: 0.8rem;
+    text-align: center;
+    border-left: 0.5px solid #fff;
+    border-bottom: 2px solid #fff;
+    border-right: 0.5px solid #fff;
+
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin: auto;
+    color: #333;
+
+}
+
+footer h3 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+/* SCREEN SIZED 500px AND ABOVE */
+@media (min-width: 500px) {
+    #landing{
+        display: flex;
+        height: 100%;
+
+    }
+    #landing-text {
+        height: 100vh;
+    }
+    #landing-image {
+        height: 100vh;
+    }
+}
+
+/* SCREEN SIZED 700px AND ABOVE */
+@media (min-width: 700px) {
+    .btn{
+     padding:1rem 3rem;
+    }
+}
